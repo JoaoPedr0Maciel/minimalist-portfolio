@@ -68,7 +68,7 @@ export default function Home() {
 
       <nav className="fixed left-8 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
         <div className="flex flex-col gap-4">
-          {["intro", "work", "thoughts", "connect"].map((section) => (
+          {["intro", "work", "connect"].map((section) => (
             <button
               key={section}
               onClick={() =>
@@ -129,12 +129,12 @@ export default function Home() {
                   CURRENTLY
                 </div>
                 <div className="space-y-2">
-                  <div className="text-foreground">Full Stack Developer</div>
+                  <div className="text-foreground">Software Engineer</div>
                   <div className="text-muted-foreground">
-                    @ Albuquerque Tech
+                    @ KTech
                   </div>
                   <div className="text-xs text-muted-foreground">
-                    Fev 2025 - Present
+                    Feb 2026 - Present
                   </div>
                 </div>
               </div>
@@ -175,17 +175,37 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
               <h2 className="text-3xl sm:text-4xl font-light">Selected Work</h2>
               <div className="text-sm text-muted-foreground font-mono">
-                2023 — 2025
+                2023 — 2026
               </div>
             </div>
 
             <div className="space-y-8 sm:space-y-12">
               {[
                 {
+                  year: "2026",
+                  role: "Software Engineer",
+                  startDate: "Feb 2026",
+                  endDate: "Present",
+                  company: "KTech",
+                  companyUrl: "https://ktech.mobi/",
+                  description:
+                    "Responsible for developing and maintaining a government platform using NestJS, React, and Node.js. Focused on scalability, clean architecture, and code quality with PostgreSQL, Prisma, and Docker.",
+                  tech: [
+                    "NestJS",
+                    "Next.js",
+                    "Node.js",
+                    "TypeScript",
+                    "PostgreSQL",
+                    "Type ORM",
+                    "Docker",
+                    "Git",
+                  ],
+                },
+                {
                   year: "2025",
                   role: "Software Engineer",
                   startDate: "Feb 2025",
-                  endDate: "Present",
+                  endDate: "Jan 2026",
                   company: "Albuquerque Tech",
                   companyUrl: "https://albuquerquetech.com.br",
                   description:
